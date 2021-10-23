@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class BattlesAppDesign1 {
+
+    TableView Table
+
+    +main(String args[])
+    +Start(Stage primaryStage) throws Exception
+}
+
+@enduml
