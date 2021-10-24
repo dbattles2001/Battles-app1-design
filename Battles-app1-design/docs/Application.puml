@@ -2,11 +2,26 @@
 'https://plantuml.com/class-diagram
 
 class BattlesAppDesign1 {
-
-    TableView Table
-
     +main(String args[])
-    +Start(Stage primaryStage) throws Exception
+    +Start(Stage stage)
+}
+
+controllerClass o-- BattlesAppDesign1
+
+class controllerClass{
+    -TextField descBox
+    -TextField dueDateBox
+    -TextField nameBox
+    -MenuItem save
+    -Button submitButton
+
+    saveFile(ActionEvent event)
+    setNameDescDueDate(ActionEvent event)
+}
+
+class testClass{
+    +testNameDueDateDesc()
+    +testSaveFile()
 }
 
 @enduml
